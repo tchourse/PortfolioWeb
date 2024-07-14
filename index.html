@@ -276,6 +276,53 @@
     </div>
 </section>
 
+<!-- EXPERIENCE -->
+<section class="experience py-5" id="experience">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 mx-auto text-center">
+                <h2>Professional Experience</h2>
+                <div class="row mt-5">
+                    <div class="col-md-6 mx-auto">
+                        <div class="experience-info">
+                            <h3>Elite Softwares</h3>
+                            <p class="text-muted">WebDeveloper Intern | 30Nov2023 to 10Jan2024</p>
+                            <p>I interned as a Web Developer, gaining practical experience in HTML, CSS, JavaScript, Bootstrap, Django, XAMPP, and MySQL.</p>
+                            <a href="images/internproof.png" target="_blank">
+                                <img src="images/internproof.png" alt="Internship Proof" class="img-fluid mt-3 certificate-img" style="max-width: 200px;">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mx-auto">
+                        <div class="experience-info">
+                            <h3>Company Name</h3>
+                            <p class="text-muted">Position Title | Date Range</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer convallis tempus turpis, nec ultricies nulla convallis at.</p>
+                        </div>
+                    </div>
+
+                    <!-- Add more experience entries as needed -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- JavaScript for Zooming Image -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const certificateImgs = document.querySelectorAll('.certificate-img');
+        certificateImgs.forEach(img => {
+            img.addEventListener('click', function() {
+                window.open(this.src);
+            });
+        });
+    });
+</script>
+
+
 <!-- CONTACT -->
 <section class="contact py-5" id="contact">
     <div class="container">
