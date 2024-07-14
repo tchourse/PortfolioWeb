@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Tushar Chourse Portfolio</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/unicons.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <!-- MAIN STYLE -->
+    <link rel="stylesheet" href="css/tooplate-style.css">
+
+    <!-- Custom CSS for animated project boxes -->
+    <style>
+        .project-info {
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+        }
+
+        .project-info:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-details {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 10px;
+            transform: translateY(100%);
+            transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-info:hover .project-details {
+            transform: translateY(0);
+        }
+
+        .project-info img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Custom Social Buttons Styling */
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px; /* Adjust the space between icons */
+            margin-top: 20px; /* Adjust the top margin if needed */
+        }
+
+        .social-icon {
+            width: 30px; /* Adjust the width as needed */
+            height: 30px; /* Adjust the height as needed */
+            transition: transform 0.3s;
+        }
+
+        .social-icon:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+<!-- MENU -->
+<nav class="navbar navbar-expand-sm navbar-light">
+    <div class="container">
+        <a class="navbar-brand" href="index.html"><i class='uil uil-user'></i>TUSHAR</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a href="#about" class="nav-link"><span data-hover="About">About</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#certificates" class="nav-link"><span data-hover="Certifications">Certifications</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#project" class="nav-link"><span data-hover="Projects">Projects</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link"><span data-hover="Contact">Contact</span></a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav ml-lg-auto">
+                <div class="ml-lg-4">
+                    <div class="color-mode d-lg-flex justify-content-center align-items-center">
+                        <i class="color-mode-icon"></i>
+                        Color mode
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- ABOUT -->
+<section class="about full-screen d-lg-flex justify-content-center align-items-center" id="about">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-7 col-md-12 col-12 d-flex align-items-center">
+                <div class="about-text">
+                    <small class="small-text">Welcome to <span class="mobile-block">my portfolio website!</span></small>
+                    <h1 class="animated animated-text">
+                        <span class="mr-2">Hey folks, I'm</span>
+                        <div class="animated-info">
+                            <span class="animated-item">TusharChourse</span>
+                            <span class="animated-item">WebDeveloper</span>
+                            <span class="animated-item">Tech Learner</span>
+                        </div>
+                    </h1>
+
+                    <p>I'm Tushar Chourse, a tech enthusiast studying at AISSMS COE Pune, gearing up to conquer the tech world. I thrive on learning new skills and exploring innovative solutions. Let's connect and shape the future together! <br> <br>
+
+                        <b>(Expected graduation: 2025)</b></p>
+
+                   <div class="custom-btn-group mt-4">
+    <a href="images/Resumecollege.pdf" class="btn" style="background-color: #003366; color: #ffffff; padding: 12px 24px; font-size: 1.2em; border-radius: 6px; transition: background-color 0.3s ease;"><i class='uil uil-file-alt'></i> Download Resume</a>
+</div>
+
+                </div>
+            </div>
+
+            <div class="col-lg-5 col-md-12 col-12">
+                <div class="about-image svg">
+                    <img src="images/undraw/undraw_software_engineer_lvl6.svg" class="img-fluid" alt="svg image">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- CERTIFICATES -->
+<section class="certificates py-5" id="certificates">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 mx-auto text-center">
+                <h2>Certifications</h2>
+                <div class="row mt-5">
+                    <div class="col-md-4">
+                        <a href="images/azure.pdf" class="certificate-link" target="_blank">
+                            <div class="certificate-info">
+                                <img src="images/azure.png" class="img-fluid" alt="Azure Certificate">
+                                <div class="certificate-details">
+                                    <p>Azure Certificate</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="https://www.coursera.org/account/accomplishments/verify/S2CNUC4RNSJA" target="_blank" class="certificate-link">
+                            <div class="certificate-info">
+                                <img src="images/chtmlcss.png" class="img-fluid" alt="HTML/CSS Certificate">
+                                <div class="certificate-details">
+                                    <p>HTML/CSS Certificate</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="https://www.coursera.org/account/accomplishments/verify/D9WRSQMWZR7Z" target="_blank" class="certificate-link">
+                            <div class="certificate-info">
+                                <img src="images/githubc.png" class="img-fluid" alt="GitHub Certificate">
+                                <div class="certificate-details">
+                                    <p>GitHub Certificate</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="https://www.coursera.org/account/accomplishments/verify/QHPTM6P7HHTV" target="_blank" class="certificate-link">
+                            <div class="certificate-info">
+                                <img src="images/se.png" class="img-fluid" alt="Software Engineering Certificate">
+                                <div class="certificate-details">
+                                    <p>Software Engineering Certificate</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- PROJECTS -->
+<section class="project py-5" id="project">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 mx-auto text-center">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2>Things I have designed for digital media agencies</h2>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-md-4">
+                        <a href="images/cycleppt.pptx" class="project-link">
+                            <div class="project-info">
+                                <img src="images/project/project-image01.png" class="img-fluid" alt="project image">
+                                <div class="project-details">
+                                    <p><b>CYCLESHOP Presentation</b><br>Presentation About My Cycleshop website </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4">
+                        <a href="project2.html" class="project-link">
+                            <div class="project-info">
+                                <img src="images/project/project-image02.png" class="img-fluid" alt="project image">
+                                <div class="project-details">
+                                    <p>Project details here</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4">
+                        <a href="project3.html" class="project-link">
+                            <div class="project-info">
+                                <img src="images/project/project-image03.png" class="img-fluid" alt="project image">
+                                <div class="project-details">
+                                    <p>Project details here</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4">
+                        <a href="project4.html" class="project-link">
+                            <div class="project-info">
+                                <img src="images/project/project-image04.png" class="img-fluid" alt="project image">
+                                <div class="project-details">
+                                    <p>Project details here</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4">
+                        <a href="project5.html" class="project-link">
+                            <div class="project-info">
+                                <img src="images/project/project-image05.png" class="img-fluid" alt="project image">
+                                <div class="project-details">
+                                    <p>Project details here</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact py-5" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 col-12 mx-auto">
+                <div class="contact-content text-center">
+                    <h2 class="mb-4">Get in Touch</h2>
+
+                    <!-- Contact Information -->
+                    <div class="contact-info mb-5">
+                        <h3 class="text-white"></h3>
+                        <p class="mb-4" style="color: #333;">Connect with me through LinkedIn, Instagram, and GitHub to explore my latest projects and professional insights.<br> I'm passionate about creating engaging digital experiences and always eager to connect with like-minded professionals. Let's build something remarkable together! </p>
+                        <p class="footer-text mb-4"><i class="uil uil-phone-alt"></i> +91 7769993600</p>
+                        <p class="footer-text mb-4"><i class="uil uil-envelope"></i> <a href="mailto:tchourse@gmail.com">tchourse@gmail.com</a></p>
+                        <!-- Custom Social Buttons -->
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/tushar-chourse-026973250/">
+                                <img src="images/linkedin.png" alt="LinkedIn" class="social-icon">
+                            </a>
+                            <a href="https://www.instagram.com/tushar10.xd/?igsh=MWJwNWR1NXdvcnY3Ng%3D%3D">
+                                <img src="images/instagram.png" alt="Instagram" class="social-icon">
+                            </a>
+                            <a href="https://github.com/tchourse">
+                                <img src="images/github-sign.png" alt="GitHub" class="social-icon">
+                            </a>
+                            <!-- Add more social buttons as needed -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-12 text-center">
+                <p class="copyright-text">Designed by <a rel="nofollow" href="#" style="color: #000; font-weight: bold;">TUSHAR CHOURSE</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/Headroom.js"></script>
+<script src="js/jQuery.headroom.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+</html>
